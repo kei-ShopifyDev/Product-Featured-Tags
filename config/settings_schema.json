@@ -1274,37 +1274,37 @@
       },
       {
         "type": "color",
-        "id": "settings.tag_badge_color_scheme_text_1",
+        "id": "tag_badge_color_schema_text_1",
         "label": "商品タグのテキストカラー",
         "default": "#ffffff"
       },
       {
         "type": "color",
-        "id": "settings.tag_badge_color_scheme_1",
+        "id": "tag_badge_color_schema_1",
         "label": "商品タグの背景カラー",
         "default": "#000000"
       },
       {
         "type": "color",
-        "id": "settings.tag_badge_color_scheme_text_2",
+        "id": "tag_badge_color_schema_text_2",
         "label": "商品タグ2のテキストカラー",
         "default": "#ffffff"
       },
       {
         "type": "color",
-        "id": "settings.tag_badge_color_scheme_2",
+        "id": "tag_badge_color_schema_2",
         "label": "商品タグ2の背景カラー",
         "default": "#000000"
       },
       {
         "type": "color",
-        "id": "settings.tag_badge_color_scheme_text_3",
+        "id": "tag_badge_color_schema_text_3",
         "label": "商品タグ3のテキストカラー",
         "default": "#ffffff"
       },
       {
         "type": "color",
-        "id": "settings.tag_badge_color_scheme_3",
+        "id": "tag_badge_color_schema_3",
         "label": "商品タグ3の背景カラー",
         "default": "#000000"
       }

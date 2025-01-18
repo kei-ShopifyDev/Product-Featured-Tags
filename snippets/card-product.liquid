@@ -173,7 +173,7 @@
           <div class="card-information">
             {% for tag in card_product.tags %}
               {% if tag contains '__tags' %}
-                <span class="badge badge_tag badge_tag-{% if tag contains '__tags2' %}2{% elsif tag contains '__tag3' %}3{% endif %}">{{ tag | split: ":" | last }}</span>
+                <span class="badge badge_tag badge_tag-{% if tag contains '__tags2' %}2{% elsif tag contains '__tags3' %}3{% endif %}">{{ tag | split: ":" | last }}</span>
               {% endif %}
             {% endfor %}
             {%- if show_vendor -%}
