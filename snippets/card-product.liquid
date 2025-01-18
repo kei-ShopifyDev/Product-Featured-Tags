@@ -18,7 +18,7 @@
   - placeholder_image: {String} The placeholder image to use when no product exists. Default: 'product-apparel-2' (optional)
 
   Usage:
-  {% render 'card-product', show_vendor: section.settings.show_vendor %}
+  {% render '', show_vendor: section.settings.show_vendor %}
 {% endcomment %}
 {%- unless skip_styles -%}
   {{ 'component-rating.css' | asset_url | stylesheet_tag }}
@@ -27,6 +27,7 @@
   {{ 'component-price.css' | asset_url | stylesheet_tag }}
   {{ 'quick-order-list.css' | asset_url | stylesheet_tag }}
   {{ 'quantity-popover.css' | asset_url | stylesheet_tag }}
+  {{ 'custom-tag.css' | asset_url | stylesheet_tag }}
 {%- endunless -%}
 {%- if card_product and card_product != empty -%}
   {%- liquid
@@ -168,7 +169,13 @@
               {{ card_product.title | escape }}
             </a>
           </h3>
+          
           <div class="card-information">
+            {% for tag in card_product.tags %}
+              {% if tag contains '__tags' %}
+                <span class="badge badge_tag badge_tag-{% if tag contains '__tags2' %}2{% elsif tag contains '__tag3' %}3{% endif %}">{{ tag | split: ":" | last }}</span>
+              {% endif %}
+            {% endfor %}
             {%- if show_vendor -%}
               <span class="visually-hidden">{{ 'accessibility.vendor' | t }}</span>
               <div class="caption-with-letter-spacing light">{{ card_product.vendor }}</div>
